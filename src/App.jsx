@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Team from "./Count";
 import Friends from "./Friends";
+import Countries from "./components/Countries/Countries";
 
 function App() {
   // row function
@@ -24,27 +25,29 @@ function App() {
       <h1>React core concepts part 2</h1>
 
       {/* import jsx */}
-      <Friends></Friends>
-      <Team></Team>
+      <Countries></Countries>
+
+      {/* <Friends></Friends> */}
+      {/* <Team></Team> */}
 
       {/* normal js events stytem */}
       {/* <button onclick="handleCliked()"> Clicked</button> */}
 
       {/* es6 event rules*/}
-      <button onClick={handleCliked}> Clicked</button>
+      {/* <button onClick={handleCliked}> Clicked</button> */}
 
       {/* inline arrow function*/}
-      <button
+      {/* <button
         onClick={() => {
           alert("btn cliked 3");
         }}
       >
         {" "}
         Clicked 3
-      </button>
+      </button> */}
 
       {/* function er moddhe function */}
-      <button onClick={() => addNumber(5)}> Add Number</button>
+      {/* <button onClick={() => addNumber(5)}> Add Number</button> */}
     </>
   );
 }
